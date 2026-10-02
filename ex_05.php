@@ -14,8 +14,9 @@
     
 }
 
-$texto = "o gugupro é lindo"; 
+$texto = "o gugupro é lindo <br>"; 
 $resultado =  analisarTexto($texto);
+echo $texto;
 echo "quantidade de caracteres: " . $resultado["quantidade de caracteres"] . "<br>";
 echo "palavras: " . $resultado["palavras"] . "<br>";
 

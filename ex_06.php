@@ -16,12 +16,12 @@ function converterTemperatura($valor, $escala)
         $fahrenheit = ($valor * 1.8) + 32;
     } elseif ($escala == "Kº") {
         $celsius = $valor - 273;
-        $fahrenheit = $valor - 273 (*1,8) +32;
+        $fahrenheit = ($valor - 273) * 1.8 + 32;
     } elseif ($escala == "Fº") {
-        $celsius = $valor - 32 (/1,8);
-        $kelvin = 0;
+        $celsius = ($valor - 32) / 1.8;
+        $kelvin = $celsius + 273;
     }
-
+    
     return [
         "kelvin" => $kelvin,
         "fahrenheit" => $fahrenheit,

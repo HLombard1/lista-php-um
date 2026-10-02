@@ -5,7 +5,7 @@ function gerarSenha($comprimento = 16) {
     $max = strlen($caracteres) - 1;
 
     for ($i = 0; $i < $comprimento; $i++) {
-        $senha .= $caracteres[random_int(0, $max)];
+        $senha = $caracteres[random_int(0, $max)];
     }
 
     return $senha;
