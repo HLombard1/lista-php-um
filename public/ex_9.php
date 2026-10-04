@@ -62,5 +62,3 @@ if ($resultado["perfeito"]) {
 } else {
     echo "Perfeito: Não<br>";
 }
-
-?>
